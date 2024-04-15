@@ -1,0 +1,93 @@
+.Container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1385px;
+}
+
+.Title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.Right {
+  border-radius: 0 4px 4px 0;
+}
+
+.Left {
+  border-radius: 4px 0 0 4px;
+}
+
+.Button {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+  background-color: #f9fafe;
+  border: 1px solid #e2e4ec;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+
+  &:hover {
+    color: #3540ff;
+    background-color: #f3f5fc;
+  }
+}
+
+.ButtonSwitched {
+  @extend .Button;
+  color: white;
+  background-color: #3540ff;
+  font-weight: 600;
+
+  &:hover {
+    color: white;
+    background-color: #3540ff;
+  }
+}
+
+.InputContainer {
+  position: relative;
+  color: #3540ff;
+
+  &:focus-within {
+    color: #a2a8c1;
+  }
+}
+
+.Magnify {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+}
+
+.Search {
+  height: 50px;
+  font-size: 20px;
+  padding-left: 40px;
+  width: 104px;
+  transition: width 0.4s ease-in-out;
+  border: none;
+  outline: none;
+  background-color: #f3f5fc;
+
+  &::placeholder {
+    color: #3540ff;
+  }
+
+  &:focus {
+    width: 316px;
+    background-color: #fff;
+
+    &::placeholder {
+      color: #000;
+    }
+  }
+}
+
+.Search:focus .Magnify {
+  color: #000;
+}
