@@ -1,7 +1,9 @@
+@import '../../styles/variables';
+
 .Container {
   width: 323px;
   height: 441px;
-  background-color: #ffffff;
+  background-color: $white;
   box-shadow: 0px 3px 16px 0px #e7eaf759;
   padding-top: 13px;
 }
@@ -20,48 +22,48 @@
 }
 
 .TileAction {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $font-family;
   cursor: pointer;
   border: 1px solid #f2f4f6;
-  color: #a2a8c1;
+  color: $grey2;
   width: 162px;
   height: 59px;
   text-transform: uppercase;
-  background-color: #ffffff;
+  background-color: $white;
 
   &:hover {
-    background-color: #3540ff;
-    color: #ffffff;
+    background-color: $primary;
+    color: $white;
     font-weight: 600;
   }
 }
 
 .Icon {
   cursor: pointer;
-  color: #a2a8c1;
+  color: $grey2;
 
   &:hover {
-    color: #3540ff;
+    color: $primary;
   }
 }
 
 .IconFavourite {
   @extend .Icon;
 
-  color: #3540ff;
+  color: $primary;
 }
 
 .SettingsButton {
   width: 40px;
   height: 32px;
   border-radius: 4px;
-  background-color: #ffffff;
+  background-color: $white;
   border: none;
   cursor: pointer;
   margin-left: 10px;
 
   &:hover {
-    background-color: #f3f5fc;
+    background-color: $grey1;
   }
 }
 
@@ -69,13 +71,13 @@
   border: none;
   width: 102px;
   height: 43px;
-  color: #c5cdda;
-  background-color: #fff;
+  color: $grey3;
+  background-color: $white;
   cursor: pointer;
 
   &:hover {
-    color: #3540ff;
-    border-bottom: 2px solid #3540ff;
+    color: $primary;
+    border-bottom: 2px solid $primary;
   }
 }
 
@@ -90,15 +92,15 @@
 .Avg {
   font-size: 30px;
   font-weight: 600;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $font-family;
   margin: 0;
 }
 
 .Count {
   font-weight: 400;
   font-size: 12px;
-  font-family: 'Open Sans', sans-serif;
-  color: #a2a8c1;
+  font-family: $font-family;
+  color: $grey2;
   margin: 0;
 }
 
@@ -109,7 +111,7 @@
 
 .Star {
   cursor: pointer;
-  color: #c5cdda;
+  color: $grey3;
 }
 
 .StarSelected {
@@ -122,11 +124,11 @@
   height: 100px;
   border-radius: 50px;
   background-color: #deeaff;
-  color: #3540ff;
+  color: $primary;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $font-family;
   font-weight: 600;
   font-size: 24px;
 }
@@ -140,7 +142,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $font-family;
   font-weight: 600;
   font-size: 24px;
 }
@@ -153,7 +155,7 @@
 .Name {
   font-weight: 600;
   font-size: 19px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $font-family;
   margin-bottom: 11px;
   margin-top: 24px;
 }
@@ -161,8 +163,8 @@
 .Job {
   font-weight: 400;
   font-size: 14px;
-  font-family: 'Open Sans', sans-serif;
-  color: #a2a8c1;
+  font-family: $font-family;
+  color: $grey2;
   margin-top: 0;
   margin-bottom: 40px;
 }

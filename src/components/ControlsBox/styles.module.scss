@@ -1,13 +1,16 @@
+@import '../../styles/variables';
+
 .Container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
-  max-width: 1385px;
+  max-width: $max-width;
 }
 
 .Title {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $font-family;
   font-size: 30px;
   font-weight: 600;
 }
@@ -21,40 +24,40 @@
 }
 
 .Button {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $font-family;
   font-size: 14px;
   font-weight: 400;
   color: black;
-  background-color: #f9fafe;
+  background-color: $grey4;
   border: 1px solid #e2e4ec;
   width: 200px;
   height: 50px;
   cursor: pointer;
 
   &:hover {
-    color: #3540ff;
-    background-color: #f3f5fc;
+    color: $primary;
+    background-color: $grey1;
   }
 }
 
 .ButtonSwitched {
   @extend .Button;
-  color: white;
-  background-color: #3540ff;
+  color: $white;
+  background-color: $primary;
   font-weight: 600;
 
   &:hover {
-    color: white;
-    background-color: #3540ff;
+    color: $white;
+    background-color: $primary;
   }
 }
 
 .InputContainer {
   position: relative;
-  color: #3540ff;
+  color: $primary;
 
   &:focus-within {
-    color: #a2a8c1;
+    color: $grey2;
   }
 }
 
@@ -72,22 +75,22 @@
   transition: width 0.4s ease-in-out;
   border: none;
   outline: none;
-  background-color: #f3f5fc;
+  background-color: $grey1;
 
   &::placeholder {
-    color: #3540ff;
+    color: $primary;
   }
 
   &:focus {
     width: 316px;
-    background-color: #fff;
+    background-color: $white;
 
     &::placeholder {
-      color: #000;
+      color: $black;
     }
   }
 }
 
 .Search:focus .Magnify {
-  color: #000;
+  color: $black;
 }
