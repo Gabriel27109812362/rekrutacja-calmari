@@ -8,10 +8,8 @@ export default defineConfig({
   },
   plugins: [react()],
   test: {
+    include: ['**/*.test.tsx'],
+    globals: true,
     environment: "happy-dom",
-    outputFile: {
-      junit: "test-results.xml",
-    },
-    reporters: "default",
   },
 });

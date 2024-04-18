@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { profilesMocks } from '../../mocks/profiles';
+import { profilesMocks } from '../../data/profiles';
 import {
   FilteredSpecialists,
   applyProfiles,
